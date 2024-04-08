@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    form {
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #f8f9fa; /* Background color for the form */
+  border-radius: 5px; /* Rounded corners for the form */
+}
+
+.form-label {
+  font-weight: bold; /* Make labels bold */
+}
+
+.form-control {
+  width: 100%; /* Make inputs fill the width of their container */
+  padding: 8px; /* Adjust padding as needed */
+  margin-bottom: 10px; /* Add space between inputs */
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.form-text {
+  font-size: 14px; /* Adjust font size as needed */
+  color: #6c757d; /* Text color */
+}
+
+.form-check {
+  margin-bottom: 10px; /* Add space between checkbox and other elements */
+}
+
+.form-check-input {
+  margin-right: 5px; /* Add space between checkbox and label */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Change button color on hover */
+}
+
+.sidebar{
+    background-color: red;
+    width: 20vw;
+    font-family: sans-serif;
+    height: 90vw;
+
+}
+.sidebar nav{
+    padding: 40px;
+}
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 30px;
+}
+.sidebar nav ul li { 
+    padding: 17px;
+}
+.sidebar nav ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    /*color: dodgerblue;*/
+    opacity: 0.6;
+  transition: 0.3s;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="">My Intro</a></li>
+                   <li><a href="">Service</a></li>
+                   <li><a href="">Blog</a></li>
+                   <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>

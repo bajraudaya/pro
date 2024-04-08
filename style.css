@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: red;
+    width: 20vw;
+    font-family: sans-serif;
+    height: 90vh; /* Changed from 90vw */
+}
+
+.sidebar nav {
+    padding: 40px;
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.sidebar nav ul li {
+    padding: 17px;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    background-color: yellow;
+    width: 80vw; /* Changed from 90vw */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Changed from space-around */
+    padding: 20px; /* Added padding for spacing */
+}
+
+.infocontainer {
+    background-color: rgb(247, 0, 255);
+    margin-top: 144px; /* Changed from margin */
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Added for vertical alignment */
+    height: 60vh; /* Changed from 78vh */
+    width: 80vw;
+}
+
+.devpic img {
+    height: 70vh;
+    width: auto; /* Added to maintain aspect ratio */
+}
+
+.devinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 5vw; /* Changed from px */
+}
+
+.name {
+    font-size: 4vw; /* Changed from px */
+}
+
+.about {
+    font-size: 3vw; /* Changed from px */
+}
+
+.buttons {
+    margin-top: 2vw; /* Changed from px */
+}
+
+.buttons button {
+    padding: 1vw 1.4vw; /* Changed from px */
+    border-radius: 1vw; /* Changed from px */
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw; /* Changed from px */
+    margin: 0 0.5vw; /* Changed from px */
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: dodgerblue;
+    background-color: aliceblue;
+}
+/* Base styles */
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contactform {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactform h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-control {
+        padding: 8px;
+    }
+}
